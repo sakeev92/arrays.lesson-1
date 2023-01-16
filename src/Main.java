@@ -23,7 +23,7 @@ public class Main {
             System.out.println(numbers2[i]);
         }
         System.out.println("Третий массив");
-        int[] numbers3 = new int[]{48963, 456, 235, 4, 5, 8, 89};
+        char[] numbers3 = {'a', 'b', 'c'};
         for (int i = 0; i < numbers3.length; i++) {
             System.out.println(numbers3[i]);
         }
@@ -55,7 +55,7 @@ public class Main {
             }
             System.out.println();
             System.out.println("Третий массив");
-            int[] numbers3 = new int[]{48963, 456, 235, 4, 5, 8, 89};
+            char[] numbers3 = {'a', 'b', 'c'};
             for (int i = 0; i < numbers3.length; i++) {
                 System.out.print(numbers3[i]);
                 if (i < numbers3.length - 1) {
@@ -75,7 +75,7 @@ public class Main {
             for (int i = numbers1.length - 1; i >= 0; i--) {
                 numbers1[i] = i + 1;
                 System.out.print(numbers1[i] + " ");
-                if (i < numbers1.length - 1) {
+                if (i != 0) {
                     System.out.print(", ");
 
                 }
@@ -86,17 +86,17 @@ public class Main {
             double[] numbers2 = {1.57, 7.654, 9.986};
             for (int i = numbers2.length - 1; i >= 0; i--) {
                 System.out.print(numbers2[i]);
-                if (i < numbers2.length - 1) {
+                if (i != 0) {
                     System.out.print(", ");
 
                 }
             }
             System.out.println();
             System.out.println("Третий массив");
-            int[] numbers3 = new int[]{48963, 456, 235, 4, 5, 8, 89};
-            for (int i = 0; i < numbers3.length; i++) {
+            char[] numbers3 = {'a', 'b', 'c'};
+            for (int i = numbers3.length - 1; i >= 0; i--) {
                 System.out.print(numbers3[i]);
-                if (i < numbers3.length - 1) {
+                if (i != 0) {
                     System.out.print(", ");
 
                 }
@@ -108,9 +108,19 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int [] arr = {2, 4, 6, 7 , 9};
+        int[] arr = {1, 2, 3};
+        for (int i = 0; i < arr.length; i++)  {
+            if (arr[i] % 2 != 0)  {
+                arr[i] += 1;
+            }
+        }
         System.out.println(Arrays.toString(arr));
+
     }
 }
+
+
+
+
 
 
